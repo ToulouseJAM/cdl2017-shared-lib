@@ -14,17 +14,9 @@ class TestMySharedLibs extends BasePipelineTest {
 
     @Test
     public void testCustomBuild() {
-        def script = loadScript("vars/customBuild.groovy");
-        script.call("task")
-        assertJobStatusSuccess()
+        // TODO
     }
 
-    @Test
-    public void testCustomBuildFail() {
-        def script = loadScript("vars/customBuild.groovy");
-        script.call()
-        assertJobStatusFailure()
-    }
 }
 
 
