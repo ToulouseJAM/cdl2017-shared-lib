@@ -1,0 +1,20 @@
+apply plugin: 'groovy'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.8'
+    testCompile 'junit:junit:4.11'
+    testCompile 'com.lesfurets:jenkins-pipeline-unit:1.1'
+}
+
+sourceSets {
+    test {
+        groovy {
+            srcDirs=['tests']
+        }
+    }
+}
+
