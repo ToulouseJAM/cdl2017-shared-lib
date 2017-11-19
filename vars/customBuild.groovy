@@ -1,4 +1,4 @@
-#!/usr/env/groovy
+#!/usr/bin/env groovy
 
 def call(def task) {
 
